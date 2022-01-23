@@ -121,7 +121,8 @@ p {
     font-size: 2.5rem;
   }
   h3 {
-    font-size: 1.75rem;
+    color: rgb(7, 116, 13);
+    font-size: 2rem;
   }
   h4 {
     font-size: 1rem;
@@ -183,7 +184,7 @@ Modal
 */
 .hero {
   min-height: 100vh;
-  background: url("./hero.jpg") center/cover no-repeat;
+  background: url("./img/hero.jpg") center/cover no-repeat;
   display: grid;
   place-items: center;
 }
@@ -212,7 +213,7 @@ Modal
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(73, 166, 233, 0.5);
+  background: rgba(206, 214, 219, 0.5);
   display: grid;
   place-items: center;
   transition: var(--transition);
@@ -231,8 +232,18 @@ Modal
   z-index: 10;
 }
 
+.open-js {
+  visibility: visible;
+  z-index: 10;
+}
+
+.open-dog {
+  visibility: visible;
+  z-index: 10;
+}
+
 .open-chicken .modal-container {
-  background: url("chicken.jpg") center/cover no-repeat;
+  background: url("./img/chicken.jpg") center/cover no-repeat;
   border-radius: var(--radius);
   width: 70%;
   height: 50%;
@@ -244,7 +255,31 @@ Modal
 }
 
 .open-beer .modal-container {
-  background: url("beer.jpg") center/cover no-repeat;
+  background: url("./img/beer.jpg") center/cover no-repeat;
+  border-radius: var(--radius);
+  width: 70%;
+  height: 50%;
+  max-width: var(--fixed-width);
+  text-align: center;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.open-js .modal-container {
+  background: url("./img/js.jpg") center/cover no-repeat;
+  border-radius: var(--radius);
+  width: 70%;
+  height: 50%;
+  max-width: var(--fixed-width);
+  text-align: center;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.open-dog .modal-container {
+  background: url("./img/dog.jpg") center/cover no-repeat;
   border-radius: var(--radius);
   width: 70%;
   height: 50%;
