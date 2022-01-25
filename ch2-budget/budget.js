@@ -12,9 +12,9 @@ const exPanel = document.querySelector(".expenses-panel");
 
 let expenseList = [];
 
+//택스트 색 변경
 const changeColor = () => {
   const total = balance.innerHTML;
-  console.log(total.slice(0, -1));
   if (Number(total.slice(0, -1)) < 0) {
     balance.classList.add("negative");
     balance.classList.remove("positive");
